@@ -50,6 +50,12 @@ body {
     grid-row-end: 3;
 }
 
+.side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .mainBody {
     display: grid;
     background-color: gray;
