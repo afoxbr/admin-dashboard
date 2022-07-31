@@ -49,14 +49,14 @@ body {
 }
 
 #smallAv {
-    height: 36px;
-    width: 36px;
+    height: 48px;
+    width: 48px;
     border-radius: 50%;
 }
 
 #bigAv {
-    height: 60px;
-    width: 60px;
+    height: 72px;
+    width: 72px;
     border-radius: 50%;
 }
 
@@ -173,4 +173,22 @@ body {
     width: 300px;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 1px;
+    margin-right: 12px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px grey;
+}
+
+.trendIcon {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-right: 16px;
 }
