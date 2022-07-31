@@ -1,8 +1,7 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 240px 1fr;
     grid-template-rows: 1fr 4fr;
-    gap: 4px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -12,6 +11,8 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .topBar {
@@ -21,11 +22,30 @@ body {
     gap: 8px;
 }
 
+#searchInput {
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    margin-right: 48px;
+}
+
 .lowBar {
     display: grid;
     grid-template-columns: auto 1fr auto auto auto;
     gap: 8px;
     align-items: center;
+}
+
+#introText {
+    margin-left: 12px;
+}
+
+#hiText {
+    font-size: smaller;
+}
+
+#userName, #nameTop {
+    font-weight: 600;
 }
 
 #smallAv {
@@ -40,6 +60,14 @@ body {
     border-radius: 50%;
 }
 
+.headerButt {
+    border-radius: 12px;
+    background-color: green;
+    color: white;
+    padding: 6px;
+    width: 60px;
+}
+
 .sidebar {
     display: grid;
     background-color: green;
@@ -50,13 +78,24 @@ body {
     grid-row-end: 3;
 }
 
+.topSide, .bottomSide {
+    margin-top: 25px;
+    margin: 25px;
+}
+
 .side {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.sideIcon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .mainBody {
     display: grid;
-    background-color: gray;
+    background-color: gainsboro;
+    box-shadow: inset 0 0 4px grey;
 }
