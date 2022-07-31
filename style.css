@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 240px 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 140px 1fr;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -69,7 +69,9 @@ body {
 }
 
 .sidebar {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: green;
     color: white;
     grid-column-start: 1;
@@ -98,4 +100,33 @@ body {
     display: grid;
     background-color: gainsboro;
     box-shadow: inset 0 0 4px grey;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements {
+    width: 200px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.trending {
+    width: 200px;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
